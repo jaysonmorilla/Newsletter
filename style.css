@@ -103,7 +103,7 @@ input[type='email']:focus-visible {
 	outline: none;
 }
 
-input[type='submit']:active {
+input[type='submit']:hover, button:hover {
 	background-image: linear-gradient(to right, #ff537b, #fe6a3a);
 }
 
@@ -118,4 +118,50 @@ input[type='submit']:active {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.modal-notification {
+	position: relative;
+	margin: 0 auto;
+	width: 42%;
+	display: none;
+}
+
+.modal-content {
+	padding: 1.5em;	
+}
+
+.modal-content h2 {
+	display: block;
+	font-size: 2.65em !important;
+	margin: 0.9em 0 0.5em !important;
+}
+
+.modal-content article {
+	color: #36384d;
+	font-weight: lighter;
+	margin-bottom: 2em;
+	line-height: 1.5em;
+}
+
+.modal-content ._email {
+	font-weight: bolder;
+}
+
+.modal-content button {
+	width: 100%;
+	padding: 1em;
+	cursor: pointer;
+	background-color: #36384d;
+	border-radius: 10px;
+}
+
+.modal-icon {
+	display: block;
+	height: 70px;
+	width: 70px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url('./svg/circle-check-solid.svg');
+	background-size: 100%;
 }
