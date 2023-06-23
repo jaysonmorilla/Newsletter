@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	const _query = (__email = '') => {
 		document.querySelector(".modal-notification").style.display = 'block';
 		document.querySelector(".wrapper-flex").style.display = 'none';
+		document.querySelector("._email").textContent = __email;
 	}
 
 	const _dismiss = () => {
